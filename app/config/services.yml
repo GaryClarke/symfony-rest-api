@@ -1,0 +1,18 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+    twig.battle_extension:
+        class: AppBundle\Twig\BattleExtension
+        tags:
+            - { name: twig.extension }
+
+    battle.battle_manager:
+        class: AppBundle\Battle\BattleManager
+        arguments: ['@doctrine.orm.entity_manager']
+
+    battle.power_manager:
+        class: AppBundle\Battle\PowerManager
+        arguments: ['@doctrine.orm.entity_manager']

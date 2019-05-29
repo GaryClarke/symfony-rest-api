@@ -1,0 +1,38 @@
+{
+    "name": "hautelook/alice-bundle",
+    "description": "Symfony2 Bundle that helps loading fixture data written with the Alice library",
+    "keywords": ["Symfony2", "Fixture", "ORM", "Alice"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Baldur Rensch",
+            "email": "brensch@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "nelmio/alice": "~1.7",
+        "doctrine/doctrine-fixtures-bundle": "~2.2",
+        "doctrine/doctrine-bundle": "~1.2"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": "~2.1",
+        "symfony/console": "~2.1",
+        "symfony/yaml": "~2.1",
+        "doctrine/orm": "~2.4",
+        "symfony/browser-kit": "~2.1",
+        "symfony/validator": "~2.1",
+        "solarium/solarium": "~3.1",
+        "hautelook/solarium-fixtures": "~1.0"
+    },
+    "suggest": {
+        "hautelook/solarium-fixtures": "To add Solarium fixtures"
+    },
+    "suggests": {
+        "hautelook/solarium-fixtures": "For Solarium fixtures"
+    },
+    "autoload": {
+        "psr-4": { "Hautelook\\AliceBundle\\": "" }
+    }
+}
